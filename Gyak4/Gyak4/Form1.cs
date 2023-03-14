@@ -70,6 +70,27 @@ namespace Gyak4
                 "Ár (mFt)",
                 "Négyzetméter ár (Ft/m2)"
             };
+
+            for (int i = 0; i < headers.Length; i++)
+            {
+                xlSheet.Cells[1, i + 1] = headers[i];
+            }
+
+            object[,] values = new object[Flats.Count, headers.Length];
+
+            int counter = 0;
+            foreach (Flat f in Flats)
+            {
+                values[counter, 1] = f.Code;
+                values[counter, 2] = f.Vendor;
+                values[counter, 3] = f.Side;
+                values[counter, 4] = f.District;
+                values[counter, 5] = f.Elevator;
+                values[counter, 6] = f.NumberOfRooms;
+                values[counter, 7] = f.FloorArea;
+                values[counter, 8] = "";
+                counter++;
+            }
         }
     }
 }
