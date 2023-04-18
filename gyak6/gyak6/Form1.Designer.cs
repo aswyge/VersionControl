@@ -1,5 +1,5 @@
 ﻿
-namespace gyak6
+namespace gyak7
 {
     partial class Form1
     {

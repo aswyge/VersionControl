@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace gyak6.Properties
+namespace gyak7.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
